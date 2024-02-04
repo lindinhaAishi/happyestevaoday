@@ -1,0 +1,16 @@
+body {
+    background-image: url(assets/letterbackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Dokdo', cursive;
+    color: rgb(41, 41, 41);
+    font-size: 40px;
+}
+
+.fmty {
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 190px;
+    text-align: justify;
+    font-size: 30px;
+}

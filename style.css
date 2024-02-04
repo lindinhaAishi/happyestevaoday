@@ -1,0 +1,206 @@
+@keyframes gangorra {
+  0% {
+    transform: translateX(-50%) rotate(5deg);
+  }
+  100% {
+    transform: translateX(-50%) rotate(-5deg);
+  }
+}
+
+@keyframes shooting-star {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(300px) translateX(200px);
+    opacity: 0;
+  }
+}
+
+@keyframes shake {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(-3px, -3px);
+    }
+    50% {
+      transform: translate(3px, 3px);
+    }
+    75% {
+      transform: translate(-2px, 2px);
+    }
+    90% {
+        transform: translate(2px, -2px);
+      }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+body {
+    background-image: url(assets/spacewow.png);
+    font-family: 'Dokdo', cursive;
+    color: white;
+    font-size: 40px;
+    
+
+}
+
+#floatingImage {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.5s ease;
+    max-width: 150px;
+    max-height: 200px;
+    z-index: 1;
+  }
+
+
+  #verticalLine {
+    position: fixed;
+    background-color: white;
+    width: 1px;
+    height: 100%;
+    left: 77px;
+    top: 0;
+    z-index: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 100%);
+}
+
+.welcuminglol {
+    text-align: center;
+    margin-top: 170px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+  
+.linhadotempo {
+    text-align: center;
+    margin-top: 170px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.euchibi {
+    max-width: 100px;
+    max-height: 150px;
+    animation: shake 4s ease-in-out infinite
+}
+
+.fading-hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, white, transparent);
+    background-size: 2000% 300%;
+    margin: 0 auto;
+  }
+
+  .imgtl {
+    align-items: center;
+    max-width: 850px;
+    max-height: 900px;
+  }
+
+  .terra {
+    align-items: flex-end;
+    max-width: 250px;
+    max-height: 300px;
+    margin-left: 900px;
+    animation: shake 2s ease-in-out infinite
+  }
+
+  .netuno {
+    align-items: flex-end;
+    max-width: 250px;
+    max-height: 300px;
+    margin-right: 800px;
+    animation: shake 6s ease-in-out infinite
+  }
+
+  .saturno {
+    align-items: flex-end;
+    max-width: 250px;
+    max-height: 300px;
+    margin-right: 400px;
+    animation: shake 3s ease-in-out infinite
+  }
+
+  .imgmine {
+    align-items: center;
+    max-width: 350px;
+    max-height: 350px;
+    border-radius: 20px;
+  }
+
+
+  .mewofooter {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 10%; 
+    z-index: 999;
+    margin-left: 1500px;
+}
+
+.foguete {
+  max-width: 150;
+  max-height: 200;
+  margin-right: 800px;
+  animation: shake 6s ease-in-out infinite
+}
+
+.star1 {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: white;
+  animation: shooting-star 6s linear infinite;
+}
+
+.star2 {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: white;
+  animation: shooting-star 3s linear infinite;
+  margin-left: 700px;
+}
+
+.star3 {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: white;
+  animation: shooting-star 3s linear infinite;
+  margin-left: 1000px;
+}
+
+.star4 {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: white;
+  animation: shooting-star 3s linear infinite;
+}
+
+#imgbolito {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#imgbolito img {
+  max-width: 25%;
+  max-height: 25%;
+}
+
+.cartinha{
+  max-width: 110px;
+  max-height: 60px;
+  animation: gangorra 0.2s ease-in-out infinite alternate;
+}
+
